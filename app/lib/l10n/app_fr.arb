@@ -1,0 +1,608 @@
+{
+  "@@locale": "fr",
+  "appName": "Saji",
+  "welcomeTitle": "Bienvenue sur Saji",
+  "welcomeSubtitle": "Tout ce qu'il vous faut, livré chez vous",
+  "commonRetry": "Réessayer",
+  "commonCancel": "Annuler",
+  "commonConfirm": "Confirmer",
+  "commonSave": "Enregistrer",
+  "commonDelete": "Supprimer",
+  "commonEdit": "Modifier",
+  "commonAdd": "Ajouter",
+  "commonClose": "Fermer",
+  "commonSearch": "Rechercher",
+  "commonNext": "Suivant",
+  "commonBack": "Retour",
+  "commonSeeAll": "Voir tout",
+  "commonYes": "Oui",
+  "commonNo": "Non",
+  "commonLoading": "Chargement…",
+  "commonOptional": "Facultatif",
+  "commonRequired": "Obligatoire",
+  "commonCall": "Appeler",
+  "commonFilter": "Filtrer",
+  "commonApply": "Appliquer",
+  "commonReset": "Réinitialiser",
+  "commonToday": "Aujourd'hui",
+  "commonNone": "Aucun",
+  "commonRefresh": "Actualiser",
+  "commonExport": "Exporter",
+  "errorGeneric": "Une erreur est survenue, veuillez réessayer",
+  "errorNetwork": "Pas de connexion Internet, vérifiez votre réseau",
+  "errorTimeout": "La requête a pris trop de temps, réessayez",
+  "errorServer": "Le serveur ne répond pas, réessayez dans un instant",
+  "errorUnauthorized": "Votre session a expiré, reconnectez-vous",
+  "errorForbidden": "Vous n'avez pas la permission pour cette action",
+  "errorNotFound": "Élément introuvable",
+  "errorConflict": "Cette action est impossible pour le moment",
+  "errorValidation": "Vérifiez les informations saisies",
+  "errorTooMany": "Trop de tentatives, patientez un instant",
+  "authLoginTitle": "Connexion",
+  "authRegisterTitle": "Créer un compte",
+  "authPhone": "Numéro de téléphone",
+  "authPhoneHint": "0X XX XX XX XX",
+  "authPassword": "Mot de passe",
+  "authPasswordHint": "6 caractères minimum",
+  "authFullName": "Nom complet",
+  "authFullNameHint": "Votre nom et prénom",
+  "authLogin": "Se connecter",
+  "authRegister": "Créer le compte",
+  "authNoAccount": "Vous n'avez pas de compte ?",
+  "authHaveAccount": "Vous avez déjà un compte ?",
+  "authLogout": "Se déconnecter",
+  "authLogoutConfirm": "Voulez-vous vous déconnecter de votre compte ?",
+  "authInvalidPhone": "Saisissez un numéro algérien valide",
+  "authInvalidPassword": "Le mot de passe doit contenir au moins 6 caractères",
+  "authInvalidName": "Saisissez votre nom complet",
+  "authOtpTitle": "Code de vérification",
+  "authOtpSubtitle": "Saisissez le code envoyé au {phone}",
+  "@authOtpSubtitle": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "authOtpResend": "Renvoyer le code",
+  "authOtpDisabled": "La vérification par code est désactivée, utilisez votre mot de passe",
+  "authChangePassword": "Changer le mot de passe",
+  "authCurrentPassword": "Mot de passe actuel",
+  "authNewPassword": "Nouveau mot de passe",
+  "locationTitle": "Où livrons-nous ?",
+  "locationSubtitle": "Placez-vous sur la carte ou saisissez votre adresse",
+  "locationUseGps": "Utiliser ma position actuelle",
+  "locationPermissionDenied": "Accès à la position refusé, saisissez votre adresse manuellement",
+  "locationServiceDisabled": "La localisation est désactivée, activez-la ou saisissez votre adresse",
+  "locationManualEntry": "Saisir l'adresse manuellement",
+  "locationSearching": "Recherche de votre adresse…",
+  "locationUnknownAddress": "Nous n'avons pas pu nommer ce lieu, saisissez-le vous-même",
+  "locationConfirm": "Confirmer la position",
+  "addressTitle": "Mes adresses",
+  "addressAdd": "Ajouter une adresse",
+  "addressEdit": "Modifier l'adresse",
+  "addressLabel": "Nom de l'adresse",
+  "addressLabelHint": "Maison, Travail…",
+  "addressWilaya": "Wilaya",
+  "addressCommune": "Commune",
+  "addressStreet": "Rue et numéro",
+  "addressNotes": "Notes pour le livreur",
+  "addressNotesHint": "Étage, numéro de porte, un repère…",
+  "addressSetDefault": "Définir comme adresse par défaut",
+  "addressDefault": "Par défaut",
+  "addressEmpty": "Vous n'avez pas encore ajouté d'adresse",
+  "addressDeleteConfirm": "Voulez-vous supprimer cette adresse ?",
+  "homeDeliverTo": "Livrer à",
+  "homeSearchHint": "Que voulez-vous manger ?",
+  "homeCategories": "Catégories",
+  "homePopularNearby": "Les plus populaires près de vous",
+  "homeOffers": "Offres",
+  "homeNoVendors": "Aucun magasin disponible dans votre zone pour le moment",
+  "homeNoOffers": "Aucune offre pour le moment",
+  "navHome": "Accueil",
+  "navOrders": "Commandes",
+  "navProfile": "Compte",
+  "navCart": "Panier",
+  "vendorsTitle": "Magasins",
+  "vendorClosed": "Actuellement fermé",
+  "vendorOpen": "Ouvert",
+  "vendorMinOrder": "Minimum {amount}",
+  "@vendorMinOrder": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "vendorDeliveryFee": "Livraison {amount}",
+  "@vendorDeliveryFee": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "vendorMinutes": "{count} min",
+  "@vendorMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "vendorKm": "{value} km",
+  "@vendorKm": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "vendorRatings": "({count} avis)",
+  "@vendorRatings": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "vendorSearchHint": "Rechercher dans le menu",
+  "vendorSpecialOffers": "Offres spéciales",
+  "vendorEmptyMenu": "Ce magasin n'a pas encore de produits",
+  "vendorClosedCta": "Ce magasin est actuellement fermé",
+  "filterTitle": "Filtrer les résultats",
+  "filterOpenNow": "Ouvert maintenant",
+  "filterHasOffer": "Avec offres",
+  "filterSort": "Trier par",
+  "filterSortNearest": "Le plus proche",
+  "filterSortFastest": "Le plus rapide",
+  "filterSortRating": "Les mieux notés",
+  "filterSortFeatured": "À la une",
+  "filterCategory": "Catégorie",
+  "filterAll": "Tout",
+  "productAddToCart": "Ajouter au panier",
+  "productUnavailable": "Actuellement indisponible",
+  "productQuantity": "Quantité",
+  "productRequiredOption": "Choix obligatoire",
+  "productChooseOne": "Choisissez-en un",
+  "productChooseMany": "Choisissez ce que vous voulez",
+  "productAdded": "Ajouté à votre panier",
+  "cartTitle": "Panier",
+  "cartEmpty": "Votre panier est vide",
+  "cartEmptyAction": "Parcourir les magasins",
+  "cartGoToCart": "Aller au panier",
+  "cartTotal": "Total",
+  "cartClearTitle": "Magasin différent",
+  "cartClearMessage": "Votre panier contient des articles d'un autre magasin. Le vider et recommencer ?",
+  "cartClearConfirm": "Vider le panier",
+  "cartItemCount": "{count} articles",
+  "@cartItemCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cartRemoveItem": "Retirer l'article",
+  "checkoutTitle": "Finaliser la commande",
+  "checkoutAddress": "Adresse de livraison",
+  "checkoutChangeAddress": "Modifier",
+  "checkoutDeliveryType": "Type de livraison",
+  "checkoutDeliveryNormal": "Livraison standard",
+  "checkoutDeliveryVip": "Livraison VIP",
+  "checkoutDeliveryVipHint": "Préparation et livraison prioritaires",
+  "checkoutPayment": "Moyen de paiement",
+  "checkoutPaymentCash": "Espèces",
+  "checkoutPaymentElectronic": "Carte",
+  "checkoutPaymentSoon": "Bientôt disponible",
+  "checkoutVoucher": "Bon de réduction",
+  "checkoutVoucherHint": "Saisissez votre code",
+  "checkoutVoucherApply": "Appliquer",
+  "checkoutVoucherRemove": "Retirer",
+  "checkoutUsePoints": "Utiliser mes points",
+  "checkoutPointsBalance": "Vous avez {count} points",
+  "@checkoutPointsBalance": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "checkoutNote": "Note pour le magasin",
+  "checkoutNoteHint": "Par exemple : sans oignons, appelez en arrivant…",
+  "checkoutSubtotal": "Sous-total",
+  "checkoutServiceFee": "Frais de service",
+  "checkoutDeliveryFee": "Livraison",
+  "checkoutDiscount": "Remise",
+  "checkoutGrandTotal": "Total général",
+  "checkoutSubmit": "Commander",
+  "checkoutNoAddress": "Ajoutez une adresse avant de commander",
+  "successTitle": "Votre commande est enregistrée",
+  "successMessage": "Nous vous appellerons pour la confirmer",
+  "successOrderCode": "Commande n° {code}",
+  "@successOrderCode": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "successTrack": "Suivre la commande",
+  "successBackHome": "Retour à l'accueil",
+  "ordersTitle": "Mes commandes",
+  "ordersEmpty": "Vous n'avez encore rien commandé",
+  "ordersEmptyAction": "Commencer mes achats",
+  "ordersActive": "En cours",
+  "ordersHistory": "Passées",
+  "ordersReorder": "Commander à nouveau",
+  "ordersRate": "Noter la commande",
+  "ordersCancel": "Annuler la commande",
+  "ordersCancelReason": "Motif d'annulation",
+  "ordersCancelReasonHint": "Dites-nous pourquoi vous annulez",
+  "ordersCancelled": "Commande annulée",
+  "ordersDetails": "Détails de la commande",
+  "ordersItems": "Articles",
+  "ordersCallAgent": "Appeler le livreur",
+  "ordersCallVendor": "Appeler le magasin",
+  "ordersCallSupport": "Appeler le support",
+  "ordersAgentOnWay": "Votre livreur est en route",
+  "ordersNoAgentYet": "Aucun livreur assigné pour l'instant",
+  "statusPending": "En attente de confirmation",
+  "statusConfirmed": "Confirmée",
+  "statusSentToVendor": "Envoyée au magasin",
+  "statusPreparing": "En préparation",
+  "statusReady": "Prête à être récupérée",
+  "statusAssigned": "Assignée à un livreur",
+  "statusAccepted": "Acceptée par le livreur",
+  "statusPickedUp": "Récupérée",
+  "statusOnTheWay": "En route",
+  "statusDelivered": "Livrée",
+  "statusCancelled": "Annulée",
+  "statusLate": "En retard",
+  "ratingTitle": "Comment s'est passée votre expérience ?",
+  "ratingVendor": "Noter le magasin",
+  "ratingAgent": "Noter le livreur",
+  "ratingComment": "Votre commentaire",
+  "ratingCommentHint": "Partagez votre avis (facultatif)",
+  "ratingSubmit": "Envoyer l'avis",
+  "ratingThanks": "Merci pour votre avis",
+  "profileTitle": "Compte",
+  "profileAccount": "Compte",
+  "profileEditProfile": "Modifier le profil",
+  "profileMyAddresses": "Mes adresses",
+  "profileMyPoints": "Mes points",
+  "profilePointsValue": "{count} points",
+  "@profilePointsValue": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileVouchers": "Bons et coupons",
+  "profileSettings": "Paramètres",
+  "profileNotifications": "Notifications",
+  "profileLanguage": "Langue",
+  "profileFollowUs": "Suivez-nous",
+  "profileJoinUs": "Rejoignez-nous",
+  "profileJoinUsHint": "Vous avez un magasin ou souhaitez devenir livreur ?",
+  "profileSupport": "Aide et support",
+  "profileAbout": "À propos de Saji",
+  "profileDangerZone": "Zone sensible",
+  "profileDeleteAccount": "Supprimer le compte",
+  "profileDeleteConfirm": "Votre compte sera définitivement supprimé. Êtes-vous sûr ?",
+  "agentTitle": "Tableau de bord livreur",
+  "agentOnline": "En ligne",
+  "agentOffline": "Hors ligne",
+  "agentGoOnline": "Commencer le travail",
+  "agentGoOffline": "Terminer le travail",
+  "agentOfflineHint": "Vous ne recevrez pas de commandes hors ligne",
+  "agentNewOffer": "Nouvelle demande de livraison",
+  "agentAccept": "Accepter",
+  "agentReject": "Refuser",
+  "agentRejectReason": "Motif du refus",
+  "agentRejectTooFar": "Trop loin",
+  "agentRejectBusy": "Occupé par une autre commande",
+  "agentRejectVehicle": "Problème de véhicule",
+  "agentRejectOther": "Autre motif",
+  "agentNoOffers": "Aucune nouvelle demande pour le moment",
+  "agentActiveDelivery": "Livraison en cours",
+  "agentNoActiveDelivery": "Aucune livraison en cours",
+  "agentPickup": "Récupération",
+  "agentDropoff": "Livraison",
+  "agentNavigate": "Ouvrir la carte",
+  "agentSwipePickedUp": "Glissez pour confirmer la récupération",
+  "agentSwipeOnTheWay": "Glissez pour démarrer la livraison",
+  "agentSwipeDelivered": "Glissez pour confirmer la livraison",
+  "agentCashCollected": "Confirmez avoir encaissé le montant",
+  "agentCashAmount": "Montant dû {amount}",
+  "@agentCashAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "agentHistory": "Historique des livraisons",
+  "agentStats": "Mes statistiques",
+  "agentDeliveries": "Livraisons",
+  "agentEarnings": "Gains",
+  "agentAvgTime": "Durée moyenne",
+  "agentTodayDeliveries": "Livraisons du jour",
+  "agentOfferExpires": "{seconds} secondes restantes",
+  "@agentOfferExpires": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "agentOfferExpired": "Cette demande a expiré",
+  "agentPayout": "Rémunération",
+  "agentDistance": "Distance",
+  "agentLocationRunning": "Suivi de position actif",
+  "adminDashboard": "Tableau de bord",
+  "adminOrders": "Commandes",
+  "adminCustomers": "Clients",
+  "adminAgents": "Livreurs",
+  "adminVendors": "Magasins",
+  "adminProducts": "Produits",
+  "adminCategories": "Catégories",
+  "adminOffers": "Offres",
+  "adminVouchers": "Bons de réduction",
+  "adminAnalytics": "Analyses",
+  "adminFleet": "Carte de la flotte",
+  "adminSettings": "Paramètres",
+  "adminStatTodayOrders": "Commandes du jour",
+  "adminStatRevenue": "Revenus",
+  "adminStatActiveDeliveries": "Livraisons en cours",
+  "adminStatAvgTime": "Durée moyenne de livraison",
+  "adminStatLate": "Commandes en retard",
+  "adminStatPending": "En attente de confirmation",
+  "adminStatOnlineAgents": "Livreurs en ligne",
+  "adminOrderNew": "Nouvelle commande reçue",
+  "adminOrderLate": "Commande en retard",
+  "adminCustomerInfo": "Informations client",
+  "adminDeliveryInfo": "Informations de livraison",
+  "adminCustomerNote": "Note du client",
+  "adminCallCustomer": "Appeler le client",
+  "adminCallVendor": "Appeler le magasin",
+  "adminConfirmOrder": "Confirmer la commande",
+  "adminSendToVendor": "Envoyer au magasin",
+  "adminMarkPreparing": "Préparation commencée",
+  "adminMarkReady": "Prête",
+  "adminAssignAgent": "Assigner à un livreur",
+  "adminCancelOrder": "Annuler la commande",
+  "adminCancelReason": "Motif d'annulation",
+  "adminAssignTitle": "Choisir un livreur",
+  "adminAssignEmpty": "Aucun livreur en ligne actuellement",
+  "adminAgentLoad": "{count} commandes en cours",
+  "@adminAgentLoad": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adminSearchOrders": "Rechercher par numéro ou téléphone",
+  "adminExportCsv": "Exporter en CSV",
+  "adminNoOrders": "Aucune commande correspondante",
+  "adminColOrderCode": "N° de commande",
+  "adminColTime": "Heure",
+  "adminColStatus": "Statut",
+  "adminColUses": "Utilisations",
+  "adminColName": "Nom",
+  "adminColActions": "Actions",
+  "adminVendorNew": "Nouveau magasin",
+  "adminVendorEdit": "Modifier le magasin",
+  "adminVendorName": "Nom du magasin",
+  "adminVendorSlug": "Identifiant",
+  "adminVendorDescription": "Description",
+  "adminVendorPhone": "Téléphone du magasin",
+  "adminVendorAddress": "Adresse",
+  "adminVendorLocation": "Position sur la carte",
+  "adminVendorHours": "Horaires d'ouverture",
+  "adminVendorFees": "Frais",
+  "adminVendorPrepTime": "Temps de préparation (minutes)",
+  "adminVendorFeatured": "Magasin à la une",
+  "adminVendorIsOpen": "Ouvert",
+  "adminVendorLogo": "Logo",
+  "adminVendorCover": "Image de couverture",
+  "adminSectionNew": "Nouvelle section",
+  "adminSectionName": "Nom de la section",
+  "adminProductNew": "Nouveau produit",
+  "adminProductEdit": "Modifier le produit",
+  "adminProductName": "Nom du produit",
+  "adminProductPrice": "Prix en dinars",
+  "adminProductAvailable": "Disponible",
+  "adminProductOptions": "Options",
+  "adminProductOptionName": "Nom de l'option",
+  "adminProductOptionValue": "Valeur",
+  "adminProductOptionDelta": "Différence de prix",
+  "adminProductAddOption": "Ajouter une option",
+  "adminProductBulkAvailable": "Activer la sélection",
+  "adminProductBulkUnavailable": "Désactiver la sélection",
+  "adminOfferNew": "Nouvelle offre",
+  "adminOfferTitle": "Titre de l'offre",
+  "adminOfferSubtitle": "Sous-titre",
+  "adminOfferType": "Type d'offre",
+  "adminOfferTypePercentage": "Pourcentage",
+  "adminOfferTypeFixed": "Montant fixe",
+  "adminOfferTypeFreeDelivery": "Livraison gratuite",
+  "adminOfferTypeBundle": "Lot",
+  "adminOfferValue": "Valeur",
+  "adminOfferScope": "Portée de l'offre",
+  "adminOfferPlatform": "Toute la plateforme",
+  "adminOfferSchedule": "Période",
+  "adminOfferShowOnHome": "Afficher sur l'accueil",
+  "adminOfferPreview": "Aperçu",
+  "adminVoucherNew": "Nouveau bon",
+  "adminVoucherCode": "Code",
+  "adminVoucherMinOrder": "Commande minimum",
+  "adminVoucherMaxUses": "Utilisations maximum",
+  "adminVoucherPerUser": "Par utilisateur",
+  "adminVoucherUsed": "Utilisé {count} fois",
+  "@adminVoucherUsed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adminAgentNew": "Nouveau livreur",
+  "adminAgentTempPassword": "Mot de passe temporaire",
+  "adminAgentSuspend": "Suspendre le compte",
+  "adminAgentActivate": "Activer le compte",
+  "adminCustomerBlock": "Bloquer le client",
+  "adminCustomerUnblock": "Débloquer",
+  "adminCustomerBlocked": "Bloqué",
+  "adminCustomerOrders": "Nombre de commandes",
+  "adminCustomerSpent": "Total dépensé",
+  "adminAnalyticsOrdersOverTime": "Commandes dans le temps",
+  "adminAnalyticsTopVendors": "Meilleurs magasins",
+  "adminAnalyticsTopProducts": "Produits les plus vendus",
+  "adminAnalyticsAgents": "Classement des livreurs",
+  "adminAnalyticsCancellations": "Motifs d'annulation",
+  "adminAnalyticsRange": "Période",
+  "adminFleetIdle": "Disponible",
+  "adminFleetOnDelivery": "En livraison",
+  "adminFleetEmpty": "Aucun livreur en ligne",
+  "adminFleetLastSeen": "Vu à {time}",
+  "@adminFleetLastSeen": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsServiceFee": "Frais de service",
+  "settingsVipSurcharge": "Supplément VIP",
+  "settingsAssignTimeout": "Délai d'acceptation (secondes)",
+  "settingsLateThreshold": "Seuil de retard (minutes)",
+  "settingsSupportPhone": "Téléphone du support",
+  "settingsDeliveryRadius": "Rayon de livraison (km)",
+  "settingsPointsPerHundred": "Points par 100 DA",
+  "settingsPointValue": "Valeur du point en centimes",
+  "settingsMaxPointsPercent": "Part maximale des points sur le total",
+  "settingsElectronicPayment": "Activer le paiement électronique",
+  "settingsSaved": "Paramètres enregistrés",
+  "emptyTitle": "Rien à afficher",
+  "emptySearch": "Aucun résultat pour votre recherche",
+  "errorRetryTitle": "Impossible de charger les données",
+  "offlineBanner": "Vous êtes hors ligne — données enregistrées affichées",
+  "currencySymbol": "DA",
+  "amountWithCurrency": "{amount} DA",
+  "@amountWithCurrency": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "adminImagePick": "Appuyez pour choisir une image",
+  "adminImageRemove": "Supprimer l'image",
+  "adminProductImage": "Image du produit",
+  "adminOfferImage": "Image de l'offre",
+  "vouchersEmptyTitle": "Aucun bon",
+  "vouchersEmptyMessage": "Les bons disponibles apparaîtront ici",
+  "vouchersCopy": "Copier le code",
+  "vouchersFreeDelivery": "Livraison gratuite",
+  "vouchersCopied": "{code} copié",
+  "@vouchersCopied": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "vouchersMinOrder": "Commande minimum {amount}",
+  "@vouchersMinOrder": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "vouchersExpires": "Expire le {date}",
+  "@vouchersExpires": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "vouchersPercentOff": "{value}% de remise",
+  "@vouchersPercentOff": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "vouchersAmountOff": "{amount} de remise",
+  "@vouchersAmountOff": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "notificationsCategories": "Types de notifications",
+  "notificationsOrderUpdates": "Suivi de commande",
+  "notificationsOrderUpdatesHint": "Alertes au changement de statut",
+  "notificationsPromotions": "Offres",
+  "notificationsPromotionsHint": "Nouvelles remises et bons",
+  "notificationsNewVendors": "Nouveaux magasins",
+  "notificationsNewVendorsHint": "Quand un magasin ouvre près de vous",
+  "notificationsEnabled": "Notifications activées",
+  "notificationsEnabledHint": "Vous recevrez des alertes selon vos choix",
+  "notificationsDisabled": "Notifications désactivées",
+  "notificationsDisabledHint": "Activez-les pour suivre votre commande",
+  "notificationsEnable": "Activer",
+  "languageHint": "La langue s'applique à toute l'application",
+  "portalTitle": "Mon magasin",
+  "portalOpen": "Magasin ouvert — commandes acceptées",
+  "portalClosed": "Magasin fermé — commandes refusées",
+  "portalSections": "Sections",
+  "portalAddSection": "Ajouter une section",
+  "portalSectionName": "Nom de la section",
+  "portalDeleteSectionHint": "La section sera supprimée ; ses produits resteront sans section",
+  "portalAddProduct": "Nouveau produit",
+  "portalEditProduct": "Modifier le produit",
+  "portalUnsectioned": "Sans section",
+  "portalUnavailable": "Indisponible",
+  "portalEmptyTitle": "Votre menu est vide",
+  "portalEmptyMessage": "Ajoutez vos sections et produits pour que les clients les voient",
+  "adminVendorAccount": "Compte du magasin",
+  "adminVendorAccountCreate": "Créer un accès",
+  "adminVendorAccountExists": "Ce magasin a un accès",
+  "adminVendorAccountNone": "Aucun accès",
+  "adminVendorAccountHint": "Le gérant se connecte pour gérer son menu uniquement",
+  "adminVendorAccountRevoke": "Supprimer le compte",
+  "adminVendorAccountEdit": "Modifier le compte",
+  "adminVendorAccountNewPassword": "Nouveau mot de passe (laisser vide pour conserver)",
+  "adminVendorAccountCreated": "Accès créé",
+  "adminVendorAccountUpdated": "Compte mis à jour",
+  "adminVendorAccountRevoked": "Compte supprimé",
+  "adminProductStatusPending": "En attente de validation",
+  "adminProductStatusApproved": "Publié",
+  "adminProductStatusRejected": "Refusé",
+  "adminProductApprove": "Valider",
+  "adminProductReject": "Refuser",
+  "adminProductRejectReason": "Motif du refus",
+  "adminProductApproved": "Produit publié",
+  "adminProductRejected": "Produit refusé",
+  "adminProductsPendingFilter": "En attente de validation",
+  "adminProductsAllFilter": "Tous les produits",
+  "portalProductPending": "En attente de validation de l'administrateur",
+  "portalProductRejected": "Refusé",
+  "portalProductSubmitted": "Envoyé pour validation",
+  "portalProductPendingHint": "Il apparaît aux clients une fois validé par l'administrateur",
+  "adminInvalidName": "Le nom doit contenir au moins deux caractères",
+  "adminInvalidCategory": "Choisissez une catégorie pour le magasin",
+  "adminInvalidSlug": "L'identifiant doit contenir au moins deux caractères",
+  "adminInvalidSlugChars": "Minuscules, chiffres et tirets uniquement",
+  "adminInvalidPhone": "Numéro de téléphone invalide",
+  "adminInvalidAddress": "L'adresse est trop courte",
+  "adminInvalidNumber": "Saisissez un nombre valide"
+}

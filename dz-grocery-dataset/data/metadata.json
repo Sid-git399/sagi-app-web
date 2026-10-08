@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-10-04T21:20:01+00:00",
+  "total_products": 3240,
+  "with_price": 2442,
+  "with_barcode": 796,
+  "with_arabic_name": 118,
+  "uncategorized": 176,
+  "per_source": {
+    "superette-dz": 1453,
+    "areej-market": 167,
+    "openfoodfacts": 795,
+    "maison-khazana": 464,
+    "ecomarket-dz": 337,
+    "lamiellee": 24
+  },
+  "per_category": {
+    "Animalerie": {
+      "products": 2,
+      "file": "animalerie.csv / .json"
+    },
+    "Boissons": {
+      "products": 316,
+      "file": "boissons.csv / .json"
+    },
+    "Entretien": {
+      "products": 268,
+      "file": "entretien.csv / .json"
+    },
+    "Hygiène & beauté": {
+      "products": 464,
+      "file": "hygiene-beaute.csv / .json"
+    },
+    "Maison & bricolage": {
+      "products": 84,
+      "file": "maison-bricolage.csv / .json"
+    },
+    "Non classé": {
+      "products": 176,
+      "file": "non-classe.csv / .json"
+    },
+    "Produits laitiers": {
+      "products": 475,
+      "file": "produits-laitiers.csv / .json"
+    },
+    "Viandes & poissons": {
+      "products": 40,
+      "file": "viandes-poissons.csv / .json"
+    },
+    "Épicerie": {
+      "products": 935,
+      "file": "epicerie.csv / .json"
+    },
+    "Épicerie sucrée": {
+      "products": 480,
+      "file": "epicerie-sucree.csv / .json"
+    }
+  },
+  "columns": [
+    "barcode",
+    "product_name",
+    "product_name_ar",
+    "brand",
+    "primary_category",
+    "sub_category",
+    "source_category",
+    "price_dzd",
+    "image_url",
+    "product_url",
+    "source",
+    "scraped_date"
+  ],
+  "note": "Prices are a snapshot at scraped_date and change often. See README for licence and attribution."
+}

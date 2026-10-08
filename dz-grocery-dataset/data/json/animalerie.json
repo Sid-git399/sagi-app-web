@@ -1,0 +1,30 @@
+[
+  {
+    "barcode": "",
+    "product_name": "Croquettes friskies Purina – 5 Promesses – Stérilisés – Boeuf poulet et légumes- 2Kg",
+    "product_name_ar": "",
+    "brand": "",
+    "primary_category": "Animalerie",
+    "sub_category": "Animalerie",
+    "source_category": "Animaux",
+    "price_dzd": 3200.0,
+    "image_url": "https://superette-dz.com/wp-content/uploads/2025/04/friskies-croquettes-chat-sterilises-au-poulet-et-legume.webp",
+    "product_url": "https://superette-dz.com/ar/product/croquettes-friskies-purina-5-promesses-sterilises-boeuf-poulet-et-legumes-2kg/",
+    "source": "superette-dz",
+    "scraped_date": "2026-10-04"
+  },
+  {
+    "barcode": "",
+    "product_name": "Croquettes Sèches pour Chat",
+    "product_name_ar": "",
+    "brand": "",
+    "primary_category": "Animalerie",
+    "sub_category": "Animalerie",
+    "source_category": "Market",
+    "price_dzd": 2200.0,
+    "image_url": "https://i0.wp.com/areej.store/wp-content/uploads/2024/10/friskies-cat-dry-rabbit-chicken-.jpg?fit=250%2C250&ssl=1",
+    "product_url": "https://areej.store/produit/croquettes-seches-pour-chat/",
+    "source": "areej-market",
+    "scraped_date": "2026-10-04"
+  }
+]

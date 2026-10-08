@@ -1,0 +1,125 @@
+{
+  "sources": [
+    {
+      "name": "openfoodfacts",
+      "type": "openfoodfacts",
+      "enabled": true,
+      "delay": 6.5,
+      "max_pages": 500,
+      "respect_robots": false,
+      "_note": "Official public API. Its rules (identifying User-Agent, max 10 search requests/min) apply instead of robots.txt, which targets crawlers. Data is ODbL: attribution + share-alike.",
+      "max_retries": 6
+    },
+    {
+      "name": "superette-dz",
+      "type": "woocommerce",
+      "enabled": true,
+      "base_url": "https://superette-dz.com",
+      "delay": 2.0,
+      "_note": "Supérette DZ (Alger): general supermarket, ~1,450 products, prices in DZD. WooCommerce Store API allowed by robots.txt (checked 2026-10-04)."
+    },
+    {
+      "name": "areej-market",
+      "type": "html",
+      "enabled": true,
+      "listing_url": "https://areej.store/categorie-produit/market/page/{page}/",
+      "start_page": 1,
+      "max_pages": 40,
+      "delay": 3.0,
+      "category": "Market",
+      "follow_product_pages": false,
+      "selectors": {
+        "card": "div.product-small.box",
+        "name": ".name a",
+        "price": ".price ins .amount, .price > .amount",
+        "image": "img",
+        "link": ".name a",
+        "brand": null
+      },
+      "_note": "Areej Market (Draria / Aïn Benian). The shop also sells clothes, so only the 'market' category is scraped. robots.txt blocks /wp-json/, so HTML pages are used instead of the Store API."
+    },
+    {
+      "name": "maison-khazana",
+      "type": "html",
+      "enabled": true,
+      "start_page": 1,
+      "max_pages": 40,
+      "delay": 3.0,
+      "follow_product_pages": false,
+      "selectors": {
+        "card": "form.oe_product_cart",
+        "name": ".o_wsale_products_item_title a",
+        "price": ".product_price .oe_currency_value",
+        "image": "img.oe_product_image_img",
+        "link": "a.oe_product_image_link",
+        "brand": null
+      },
+      "_note": "Maison Khazana (Alger): Algerian terroir products plus some cosmetics. Odoo eCommerce, scraped per category so each row keeps the shop's category label. 'Épicerie fine' is the parent listing and catches products outside the sub-categories (duplicates are merged).",
+      "categories": {
+        "Produits laitiers maison": "https://www.maisonkhazana.dz/shop/category/produit-laiterie-maison-khazana-114/page/{page}",
+        "Fromage frais": "https://www.maisonkhazana.dz/shop/category/fromage-fromage-frais-85/page/{page}",
+        "Fromage à pâte fraîche et filée": "https://www.maisonkhazana.dz/shop/category/fromage-fromage-a-pate-fraiche-et-filee-131/page/{page}",
+        "Fromage à pâte molle": "https://www.maisonkhazana.dz/shop/category/fromage-fromage-a-pate-molle-86/page/{page}",
+        "Fromage à pâte pressée": "https://www.maisonkhazana.dz/shop/category/fromage-fromage-a-pate-pressee-87/page/{page}",
+        "Plateaux de fromage": "https://www.maisonkhazana.dz/shop/category/plateaux-de-fromage-105/page/{page}",
+        "Épices et condiments": "https://www.maisonkhazana.dz/shop/category/epicerie-fine-epices-et-condiments-106/page/{page}",
+        "Huiles": "https://www.maisonkhazana.dz/shop/category/huiles-dolive-128/page/{page}",
+        "Vinaigres et vinaigrettes": "https://www.maisonkhazana.dz/shop/category/epicerie-fine-huile-vinaigres-et-vinaigrettes-108/page/{page}",
+        "Thé, tisane et café": "https://www.maisonkhazana.dz/shop/category/the-tisane-et-cafe-125/page/{page}",
+        "Sirop et boisson": "https://www.maisonkhazana.dz/shop/category/sirop-et-boisson-93/page/{page}",
+        "Douceurs": "https://www.maisonkhazana.dz/shop/category/douceurs-59/page/{page}",
+        "Produits de la mer": "https://www.maisonkhazana.dz/shop/category/produits-de-la-mer-124/page/{page}",
+        "Charcuterie et viande": "https://www.maisonkhazana.dz/shop/category/charcuterie-123/page/{page}",
+        "Épicerie fine": "https://www.maisonkhazana.dz/shop/category/epicerie-fine-88/page/{page}",
+        "Cosmétiques corps": "https://www.maisonkhazana.dz/shop/category/cosmetiques-corps-100/page/{page}",
+        "Cosmétiques visage": "https://www.maisonkhazana.dz/shop/category/cosmetiques-visage-99/page/{page}",
+        "Savon": "https://www.maisonkhazana.dz/shop/category/cosmetiques-savon-103/page/{page}",
+        "Cheveux": "https://www.maisonkhazana.dz/shop/category/cosmetiques-cheuveux-101/page/{page}",
+        "Huile essentielle et végétale": "https://www.maisonkhazana.dz/shop/category/cosmetiques-huile-essentielle-et-vegetale-102/page/{page}",
+        "Détergents bio": "https://www.maisonkhazana.dz/shop/category/detergents-112/page/{page}",
+        "Box et cadeaux": "https://www.maisonkhazana.dz/shop/category/box-et-cadeaux-142/page/{page}"
+      }
+    },
+    {
+      "name": "ecomarket-dz",
+      "type": "woocommerce",
+      "enabled": true,
+      "base_url": "https://www.ecomarket-dz.com",
+      "delay": 2.0,
+      "_note": "Éco Market: natural/organic products (oils, honey, herbs, also cosmetics), delivery to 58 wilayas, prices in DZD."
+    },
+    {
+      "name": "lamiellee",
+      "type": "woocommerce",
+      "enabled": true,
+      "base_url": "https://lamiellee.com.dz",
+      "delay": 2.0,
+      "_note": "La Miellée: Algerian honey and hive products (~25 products), prices in DZD."
+    },
+    {
+      "name": "coursesnet",
+      "type": "woocommerce",
+      "enabled": false,
+      "base_url": "https://www.coursesnet.dz",
+      "delay": 3.0,
+      "_note": "Courses Net (Alger): ~1,500 grocery products in DZD, but its robots.txt has 'User-agent: * Disallow: /' (only search engines allowed). Left disabled; the scraper would skip it anyway. Ask the owner for permission before enabling."
+    },
+    {
+      "name": "example-shopify-shop",
+      "type": "shopify",
+      "enabled": false,
+      "base_url": "https://example-shop.dz",
+      "delay": 2.0,
+      "_note": "Template. The Shopify adapter assumes prices are in DZD: don't add shops priced in EUR (e.g. lecomptoiralgerien.com, a France-based shop)."
+    }
+  ],
+  "_researched_but_not_usable": {
+    "jumia.com.dz": "Jumia (incl. Jumia Food) left Algeria in February 2026; the site answers 403.",
+    "yassir.com": "Yassir Market (ex-Uno hypermarkets, acquired 2026) sells through its mobile app only; there is no public web catalog.",
+    "batolis.com": "JavaScript app behind Cloudflare with content-signal restrictions; no HTML/JSON catalog.",
+    "algeriestore.com": "Answers 403 to non-browser clients.",
+    "superetti.dz, neqdilek.com, echrily.com, ardis.dz, uno.dz, supermarchi.com": "Offline or not responding (2026-10-04).",
+    "guiddini.dz": "Now a payment SaaS, no longer a shop.",
+    "temtemone.com": "App-based delivery, no public web catalog."
+  }
+}
